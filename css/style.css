@@ -1,0 +1,106 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #333;}
+
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+
+body{font-family: 'RIDIBatang'; color: #333; line-height: 30px;}
+
+#header{width: 100%; height: 120px; 
+    position: absolute; top: 0; left: 0;
+    
+    z-index: 2;
+}
+
+.header_inner{width: 1000px; margin: 0 auto;}
+p{text-align: center;}
+
+
+/*top*/
+.top{float: right;}
+.top li{float: left; padding: 5px 15px;}
+.top li a{display: block; font-size: 13px;}
+
+/*nav*/
+.nav{float: right; clear: both; margin-top: 44px; width: 560px; text-align: center; }
+.nav li{float: left;width: 25%; box-sizing: border-box;}
+.nav> li> a{display: block; font-size: 20px; padding: 0 20px;padding-bottom: 20px;}
+.nav> li> a:hover{color: #333;}
+.nav:hover{background-color: #fff;}
+
+.solid{width: 100%; margin:auto;
+    
+    height:3px;
+    background:#333;
+    visibility:hidden;
+    opacity:0;
+    transform:scaleX(0);
+    transition-property:opacity, transform;
+    transition-duration:0.5s;}
+
+.nav> li> a:hover .solid{transform:scaleX(1);
+    opacity:1;
+    visibility:visible;}
+
+    /*sub*/
+.sub {width: 100%; display: none;background-color: #fff;position: absolute; top:120px; left: 0;padding-left: 892px; box-sizing: border-box;}
+.sub ul{float: left; width: 140px;}
+.sub ul li{width: 100%; margin-bottom: 15px;}
+.sub  ul li a{ margin: 20px 0; font-size: 14px;}
+.sub ul li a:hover{border-bottom: 1px #333 solid; }
+
+/* .nav:hover .sub{display: block;} */
+.header_inner img{ position: absolute;top: 13px;left: 335px;}
+
+#header:hover{background-color: #fff;}
+
+/*main banner*/
+.main_banner{width: 100%;}
+.main_banner img{width: 100%;display: block;}
+
+/*con*/
+.con{width: 1320px; margin: 110px auto; height: 470px;}
+
+.left{width: 580px; float: left;}
+.notice{float: left; }
+
+.plus{float: right;width: 25px; height: 25px;}
+.plus:hover{transform: rotate(90deg);transition: all 0.5s;}
+
+.left ul{width: 100%; clear: both;float: left;}
+.left ul li{ border-top: 1px solid #000; height: 70px;}
+.left ul li:nth-child(1) {border-top: 3px solid #000;}
+.left ul li:nth-child(5) {border-bottom: 3px solid #000;}
+.left ul li a{display: inline-block; margin: 20px; font-size: 20px;}
+.left ul li a:hover{border-bottom: 1px solid rgb(155, 155, 155); color: rgb(100, 100, 100);}
+
+.right{width: 580px; float: right;}
+.faq{float: left;}
+.right ul{width: 100%; clear: both;float: left;}
+.right ul li{ border-top: 1px solid #000; height: 70px;}
+.right ul li:nth-child(1) {border-top: 3px solid #000;}
+.right ul li:nth-child(5) {border-bottom: 3px solid #000;}
+.right ul li a{display: inline-block; margin: 20px; font-size: 20px;}
+.right ul li a:hover{border-bottom: 1px solid rgb(155, 155, 155); color: rgb(100, 100, 100);}
+
+/*map*/
+.mapload{width: 1320px; height: 1000px; margin: 0 auto;text-align: center; border-bottom: 2px solid #333;}
+iframe{width: 1000px; margin: 0 auto; height: 500px; background-color: #bbb; margin-top: 70px; box-sizing: border-box;}
+
+.center{text-align: left; width: 1000px; margin: 0 auto;}
+.mapload h2{margin: 40px 0;}
+.bus p, .car p{margin: 20px 0;text-align: left;}
+
+/*footer*/
+.footer{width: 100%; height: 395px; background: url(../images/footer_bubble.png); position: relative; margin-top: 100px;}
+.footer_inner{width: 310px; height: 140px; margin: 100px auto; font-size: 14px; text-align: center; padding-top: 80px;}
+.footer_logo img{width: 166px;}
+.footer p{margin: 10px 0;}
+.footer_icon li{float: left;margin-left: 17px;}
+.footer_icon li a{display: inline-block; padding:10px;}
+
+.top_icon{position:fixed; bottom:50px; right:50px; display:none;z-index: 99;}
